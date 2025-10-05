@@ -334,8 +334,10 @@ int main() {
 
     while (true) {
         printMenu();
-        int choice; 
+        cout << flush;              // force the prompt to appear
+        int choice;
         if (!(cin >> choice)) break;
+
 
         if (choice == 0) {
             cout << "Goodbye!\n";
